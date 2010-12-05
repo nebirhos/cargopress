@@ -18,19 +18,8 @@ function get_page_number() {
 function theme_widgets_init() {
   register_sidebar(
     array (
-      'name' => 'Menu Above Widget Area',
-      'id' => 'menutop_widget_area',
-      'before_widget' => "",
-      'after_widget' => "",
-      'before_title' => '<h3 class="widget-title">',
-      'after_title' => '</h3>',
-    )
-  );
-
-  register_sidebar(
-    array (
-      'name' => 'Menu Bottom Widget Area',
-      'id' => 'menubottom_widget_area',
+      'name' => 'Menu Widget Area',
+      'id' => 'menu_widget_area',
       'before_widget' => '',
       'after_widget' => '',
       'before_title' => '<h3 class="widget-title">',
@@ -56,5 +45,10 @@ function cargopress_title() {
   elseif ( is_search() ) { bloginfo('name'); print ' | Search results for ' . wp_specialchars($s); get_page_number(); }
   elseif ( is_404() ) { bloginfo('name'); print ' | Not Found'; }
   else { bloginfo('name'); wp_title('|'); get_page_number(); }
+}
+
+// Navigation Menu
+if ( function_exists( 'register_nav_menu' ) ) {
+	register_nav_menu( 'primary', 'Left Menu' );
 }
 ?>
