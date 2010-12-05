@@ -1,0 +1,145 @@
+/*
+Theme Name: CargoPress Wordpress Theme
+Theme URI: http://github.com/nebirhos/cargopress
+Description: a minimalist wordpress theme inspired by the Cargo Collective project
+Version: 1.0
+Author: nebirhos
+Tags: clean, minimal, portfolio, white
+*/
+
+
+/* RESET */
+@import url('styles/reset.css');
+
+/* CargoPress */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+    background-color: #FFF;
+}
+
+a {
+    color: #888;
+    text-decoration: underline;
+}
+a:hover {color: #000;}
+
+
+/* Layout */
+div#header {
+    position: fixed;
+    top: 0; left: 35px;
+    width: 200px; height: 70px;
+}
+
+div#sidebar {
+    position: fixed;
+    top: 70px; left: 35px;
+    width: 200px;
+    z-index: 10;
+}
+
+div#main {
+    position: relative;
+    margin: 70px 35px 35px 270px;
+}
+
+div#footer {
+    position: fixed;
+    right: 35px; bottom: 15px;
+    font-size: 11px;
+}
+
+
+/* Content */
+div#portfolio-title {
+    margin: 5px 0;
+    font-family: 'Arvo', arial, serif;
+    font-weight: bold;
+    font-size: 30px;
+    overflow: hidden;
+}
+div#portfolio-title a {text-decoration: none;}
+
+/* Index Grid */
+.project-grid a {text-decoration: none;}
+
+.project-cell {
+    position: relative;
+    display: block;
+    float: left;
+    width: 200px;
+    height: 167px;
+    overflow: hidden;
+    margin-right: 35px;
+    margin-bottom: 10px;
+}
+/* Floats clearfix */
+.project-grid:after {
+    content: ".";
+	  display: block;
+	  height: 0;
+	  clear: both;
+	  visibility: hidden;
+}
+
+.project-cell h2 {
+    position: absolute;
+    width: 200px;
+    top: 20px;
+    color: #FFF;
+    font-family: 'Arvo', arial, serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.project-cell div {
+    position: absolute;
+    width: 200px;
+    height: 32px;
+    bottom: 0;
+    text-align: center;
+    line-height: 32px;
+    vertical-align: middle;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.project-cell span {padding: 2px 3px;}
+.project-cell:hover span {background-color: #FF6;}
+
+.project-cell .no-image {
+    position: absolute;
+    width: 200px;
+    height: 134px;
+    top: 0;
+    background-color: #888;
+}
+
+
+/* Sidebar Menu */
+.menu a {
+    text-decoration: none;
+    font-size: 11px;
+    padding: 2px 3px;
+    color: #888;
+}
+.menu a:hover {background-color: #888; color: #FFF;}
+
+.menu.projects a {color: #000;}
+.menu.projects a:hover {background-color: #000; color: #FFF;}
+
+/* Post */
+div#content {
+    font-size: 11px;
+}
+
+h1.title {
+    font-family: 'Arvo', arial, serif;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+div#content p {
+    margin: 10px 0;
+}
