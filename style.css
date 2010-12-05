@@ -83,16 +83,6 @@ div#portfolio-title a {text-decoration: none;}
 	  visibility: hidden;
 }
 
-.project-cell h2 {
-    position: absolute;
-    width: 200px;
-    top: 20px;
-    color: #FFF;
-    font-family: 'Arvo', arial, serif;
-    font-size: 30px;
-    text-align: center;
-}
-
 .project-cell div {
     position: absolute;
     width: 200px;

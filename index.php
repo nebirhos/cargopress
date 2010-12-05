@@ -12,7 +12,6 @@
       <?php } else {?>
         <div class="no-image"></div>
       <?php } ?>
-      <h2><?php the_title(); ?></h2>
       <div><span><?php the_title(); ?></span></div>
     </a>
   </li>
