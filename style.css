@@ -16,6 +16,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 /* CargoPress */
 body {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
     color: #000;
     background-color: #FFF;
 }
@@ -49,7 +50,6 @@ div#main {
 div#footer {
     position: fixed;
     right: 35px; bottom: 15px;
-    font-size: 11px;
 }
 
 
@@ -95,7 +95,6 @@ div#portfolio-title a {text-decoration: none;}
     text-align: center;
     line-height: 32px;
     vertical-align: middle;
-    font-size: 11px;
     font-weight: bold;
 }
 
@@ -114,8 +113,8 @@ div#portfolio-title a {text-decoration: none;}
 /* Sidebar Menu */
 .menu a {
     text-decoration: none;
-    font-size: 11px;
     padding: 2px 3px;
+    line-height: 16px;
     color: #888;
 }
 .menu a:hover {background-color: #888; color: #FFF;}
@@ -124,10 +123,6 @@ div#portfolio-title a {text-decoration: none;}
 .menu.projects a:hover {background-color: #000; color: #FFF;}
 
 /* Post */
-div#content {
-    font-size: 11px;
-}
-
 h1.title {
     font-family: 'Arvo', arial, serif;
     font-size: 20px;
