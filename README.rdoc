@@ -1,0 +1,33 @@
+= Cargopress Wordpress Theme
+Cargopress is a theme to use wordpress as a simple portfolio.
+The design is inspired by the {Cargo Collective
+project}[http://cargocollective.com].
+
+== Demo
+See a demo {here}[http://claireblandy.elisafrediani.com].
+
+== Installation
+Download the .zip archive on the top of the page, then go to
+ wordpress admin panel > appearence > themes > install themes > upload
+to install.
+
+== Configuration
+==== Custom logo
+The theme displays the blog name in the top left corner. Go to
+*Cargopress* *Options* to set an image instead.
+
+==== Grid Preview
+To enable the image thumbnail in the grid, you have to add a custom
+field named _lead_image_ containing the image url for each post (this
+sucks, I know). The image is automatically resized.
+
+==== Menu
+Additional menus are displayed above the posts menu on the left.
+
+==== Widgtes
+There's one widget area below the menu on the left.
+
+That's all!
+
+Obviously released under GNU General Public License v2.0
+Feel free to contact nebirhos:aol:com for every need.
