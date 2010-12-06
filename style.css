@@ -53,7 +53,9 @@ div#footer {
 
 /* Content */
 div#portfolio-title {
-    margin: 5px 0;
+    width: 200px;
+    height: 60px;
+    padding: 5px 0;
     font-family: 'Arvo', arial, serif;
     font-weight: bold;
     font-size: 30px;

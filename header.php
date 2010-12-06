@@ -18,11 +18,20 @@
 <body <?php body_class(); ?>>
 <div id="header">
   <div id="portfolio-title">
-    <?php if ( is_home() || is_front_page() ) { ?>
+    <?php if (CARGOPRESS_MB) {
+            $logo_src = get_blog_option( $blog_id, "cgp_custom_logo" );
+          } else {
+            $logo_src = get_option( "cgp_custom_logo" );
+          } ?>
+    <?php if ( $logo_src != "" ) { ?>
+     <a href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="home">
+       <img src="<?php bloginfo('template_directory'); ?>/scripts/timthumb.php?src=<?php echo $logo_src ?>&w=200&h=60" alt="<?php bloginfo( 'name' ) ?>" />
+     </a>
+    <?php } else if ( is_home() || is_front_page() ) { ?>
       <h1>
         <a href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="home"><?php bloginfo( 'name' ) ?></a>
       </h1>
-    <?php } else { ?>
+    <?php } else if ( $logo_src == "" ) { ?>
       <a href="<?php bloginfo( 'url' ) ?>/" title="<?php bloginfo( 'name' ) ?>" rel="home"><?php bloginfo( 'name' ) ?></a>
     <?php } ?>
 

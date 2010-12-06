@@ -51,4 +51,10 @@ function cargopress_title() {
 if ( function_exists( 'register_nav_menu' ) ) {
 	register_nav_menu( 'primary', 'Left Menu' );
 }
+
+// Check for WordPress mu or WordPress 3.0
+define('CARGOPRESS_MB', function_exists('get_blog_option'));
+
+// Create Theme Options Page
+require_once('theme-options.php');
 ?>
