@@ -4,7 +4,7 @@ The design is inspired by the {Cargo Collective
 project}[http://cargocollective.com].
 
 == Demo
-See a demo {here}[http://claireblandy.elisafrediani.com].
+See a demo {here}[http://www.elisafrediani.com].
 
 == Installation
 Download the .zip archive on the top of the page, then go to
